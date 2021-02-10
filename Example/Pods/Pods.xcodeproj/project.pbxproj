@@ -14,9 +14,16 @@
 		9BF189FC6B9ACF81C6539AE154AA15A8 /* Pods-LoginModule_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD970E70C4604427B9D5ACD7838FC76D /* Pods-LoginModule_Tests-dummy.m */; };
 		A233BCAE60B52BEDF514A88EF9305017 /* Pods-LoginModule_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 503BCA27E8B345222FCB5FF0D519D80F /* Pods-LoginModule_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2CED17844B4D80EC54B0C986DB09E2E /* Pods-LoginModule_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A519E3A29B74ADA82B51F3F83D67410 /* Pods-LoginModule_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B913078525D4305500EC01DE /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913077D25D4305500EC01DE /* LoginInteractor.swift */; };
+		B913078625D4305600EC01DE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B913077E25D4305500EC01DE /* Login.storyboard */; };
+		B913078725D4305600EC01DE /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913077F25D4305500EC01DE /* LoginModels.swift */; };
+		B913078825D4305600EC01DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913078025D4305500EC01DE /* LoginViewController.swift */; };
+		B913078925D4305600EC01DE /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913078125D4305500EC01DE /* LoginProtocols.swift */; };
+		B913078A25D4305600EC01DE /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913078225D4305500EC01DE /* LoginPresenter.swift */; };
+		B913078B25D4305600EC01DE /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913078325D4305500EC01DE /* LoginWorker.swift */; };
+		B913078C25D4305600EC01DE /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913078425D4305500EC01DE /* LoginRouter.swift */; };
 		C29A8B8CDADA3D9A5AABA8E8B5A1D474 /* LoginModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3727F974A809BBE644C33BAD67FB0A /* LoginModule-dummy.m */; };
 		D9A62D3ABE1DB7C555977DEC91A5FA99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		DFD92DA855FA92A606F1FE6CF8D49C6D /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0523E04319FE9D45C563EB8E8119AD4 /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,29 +53,36 @@
 		2C965792C42D18911E44771503A6C715 /* LoginModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoginModule.debug.xcconfig; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3FAC81178C44CB5042DF31847CFC4F35 /* Pods-LoginModule_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoginModule_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		421107074A4C196810588CEB4D9333F7 /* Pods_LoginModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LoginModule_Example.framework; path = "Pods-LoginModule_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		421107074A4C196810588CEB4D9333F7 /* Pods_LoginModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CFFA2A6AF60679B8D31AD79ABDD68F /* LoginModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginModule-umbrella.h"; sourceTree = "<group>"; };
 		46DA5B0A948F04F1149476B1649B2636 /* Pods-LoginModule_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoginModule_Example-Info.plist"; sourceTree = "<group>"; };
 		503BCA27E8B345222FCB5FF0D519D80F /* Pods-LoginModule_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoginModule_Example-umbrella.h"; sourceTree = "<group>"; };
 		593754C4C5F9328C39F1BC469C980CAD /* LoginModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoginModule-prefix.pch"; sourceTree = "<group>"; };
 		6E58ED84FFE575DFE1CAA44F8FBC518A /* Pods-LoginModule_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LoginModule_Example.modulemap"; sourceTree = "<group>"; };
 		865B4163D3E13203F045B17DEBC3D3E4 /* Pods-LoginModule_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LoginModule_Tests.modulemap"; sourceTree = "<group>"; };
-		86600FF5EE956D0FAA1BEA75D06935AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		86600FF5EE956D0FAA1BEA75D06935AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		884546D9E4E75F8EBD44CDD8AB7EC527 /* Pods-LoginModule_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoginModule_Example-dummy.m"; sourceTree = "<group>"; };
-		8A16DF2FB89FE3681E558238C521FB2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A251AD2CF669AD103A29F64B570D87E7 /* Pods_LoginModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LoginModule_Tests.framework; path = "Pods-LoginModule_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A16DF2FB89FE3681E558238C521FB2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A251AD2CF669AD103A29F64B570D87E7 /* Pods_LoginModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAA48F36F5A1BB735824C1AA40304C5 /* Pods-LoginModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginModule_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ABBD7FB1571E7DE92961F23898025216 /* Pods-LoginModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AD970E70C4604427B9D5ACD7838FC76D /* Pods-LoginModule_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoginModule_Tests-dummy.m"; sourceTree = "<group>"; };
 		AE2D2BB8DDF9B4322F3EE491DDC7F04C /* LoginModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoginModule.release.xcconfig; sourceTree = "<group>"; };
+		B913077D25D4305500EC01DE /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		B913077E25D4305500EC01DE /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B913077F25D4305500EC01DE /* LoginModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		B913078025D4305500EC01DE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B913078125D4305500EC01DE /* LoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		B913078225D4305500EC01DE /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		B913078325D4305500EC01DE /* LoginWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		B913078425D4305500EC01DE /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		C171BA2E5E8A9064351B97490160A704 /* LoginModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LoginModule-Info.plist"; sourceTree = "<group>"; };
-		CB3D87C4F900D6DFB2992ACBD309EBB7 /* LoginModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LoginModule.framework; path = LoginModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0523E04319FE9D45C563EB8E8119AD4 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = LoginModule/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		CB3D87C4F900D6DFB2992ACBD309EBB7 /* LoginModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30B3D3F3EC2C7194A6509E23E56D61B /* Pods-LoginModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D7C6B2309BC35AE59CE7174DC793D01B /* Pods-LoginModule_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoginModule_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DA25E9DFC5AFC26DC44ABE7FAB273812 /* Pods-LoginModule_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoginModule_Tests-Info.plist"; sourceTree = "<group>"; };
-		E8452089A7FACA674649B8DFB1F9F43D /* LoginModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LoginModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E8452089A7FACA674649B8DFB1F9F43D /* LoginModule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LoginModule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E913C89523CA161E7CDCEE05F8CF58D7 /* Pods-LoginModule_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoginModule_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +190,29 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		B913077B25D4300A00EC01DE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B913077C25D4305500EC01DE /* Login */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B913077C25D4305500EC01DE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B913077E25D4305500EC01DE /* Login.storyboard */,
+				B913077D25D4305500EC01DE /* LoginInteractor.swift */,
+				B913077F25D4305500EC01DE /* LoginModels.swift */,
+				B913078025D4305500EC01DE /* LoginViewController.swift */,
+				B913078125D4305500EC01DE /* LoginProtocols.swift */,
+				B913078225D4305500EC01DE /* LoginPresenter.swift */,
+				B913078325D4305500EC01DE /* LoginWorker.swift */,
+				B913078425D4305500EC01DE /* LoginRouter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,7 +252,7 @@
 		E087E31B9C2054AE63325E308238C418 /* LoginModule */ = {
 			isa = PBXGroup;
 			children = (
-				D0523E04319FE9D45C563EB8E8119AD4 /* ReplaceMe.swift */,
+				B913077B25D4300A00EC01DE /* Source */,
 				B68FB795FBD6BA22740679C6D49A34EB /* Pod */,
 				A1D4AE89E05FAEE2FBADEACD7FDD8E08 /* Support Files */,
 			);
@@ -317,6 +354,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					E7623912F8CF629336FCDBFBA9C10084 = {
+						LastSwiftMigration = 1240;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -343,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B913078625D4305600EC01DE /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +419,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29A8B8CDADA3D9A5AABA8E8B5A1D474 /* LoginModule-dummy.m in Sources */,
-				DFD92DA855FA92A606F1FE6CF8D49C6D /* ReplaceMe.swift in Sources */,
+				B913078725D4305600EC01DE /* LoginModels.swift in Sources */,
+				B913078A25D4305600EC01DE /* LoginPresenter.swift in Sources */,
+				B913078925D4305600EC01DE /* LoginProtocols.swift in Sources */,
+				B913078C25D4305600EC01DE /* LoginRouter.swift in Sources */,
+				B913078825D4305600EC01DE /* LoginViewController.swift in Sources */,
+				B913078525D4305500EC01DE /* LoginInteractor.swift in Sources */,
+				B913078B25D4305600EC01DE /* LoginWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +471,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LoginModule_Example/Pods-LoginModule_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LoginModule_Example/Pods-LoginModule_Example.modulemap";
@@ -456,7 +505,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LoginModule/LoginModule-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LoginModule/LoginModule-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LoginModule/LoginModule.modulemap";
 				PRODUCT_MODULE_NAME = LoginModule;
@@ -464,7 +513,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -488,7 +537,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LoginModule_Example/Pods-LoginModule_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LoginModule_Example/Pods-LoginModule_Example.modulemap";
@@ -553,13 +602,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -616,7 +664,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -645,7 +693,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LoginModule_Tests/Pods-LoginModule_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LoginModule_Tests/Pods-LoginModule_Tests.modulemap";
@@ -679,7 +727,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LoginModule/LoginModule-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LoginModule/LoginModule-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LoginModule/LoginModule.modulemap";
 				PRODUCT_MODULE_NAME = LoginModule;
@@ -687,7 +735,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -710,7 +758,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LoginModule_Tests/Pods-LoginModule_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LoginModule_Tests/Pods-LoginModule_Tests.modulemap";

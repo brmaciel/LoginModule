@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LoginModule'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LoginModule.'
+  s.summary          = 'LoginModule contains all classes related to Login user case'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  'Long description: modularization of app. It contains all classes needed to perform all actions in Login user case'
                        DESC
 
   s.homepage         = 'https://github.com/brmaciel/LoginModule'
@@ -28,9 +28,14 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/brmaciel/LoginModule.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
-
-  s.source_files = 'LoginModule/Classes/**/*'
+  s.ios.deployment_target = '12.0'
+  
+  s.source_files = 'Source/**/*'
+  #s.source_files = 'LoginModule/Classes/**/*'
+  # s.swift_version = '5.0'
+  # s.platforms = {
+  #   "ios": "12.0"
+  # }
   
   # s.resource_bundles = {
   #   'LoginModule' => ['LoginModule/Assets/*.png']

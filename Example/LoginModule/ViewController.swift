@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LoginModule
 
 class ViewController: UIViewController {
 
@@ -18,6 +19,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func tapLoginViewButton(_ sender: UIButton) {
+        let destinationVC = LoginRouter.createModule()
+        
+        self.present(destinationVC, animated: true, completion: nil)
     }
 
 }
