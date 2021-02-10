@@ -15,11 +15,15 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var field_password: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var constraint_bottomToButtons: NSLayoutConstraint!
+    @IBOutlet weak var constraint_bottomToSafeArea: NSLayoutConstraint!
     
     // MARK: Properties
     var interactor: LoginInteractorProtocol?
-    var visiblePasswordImage = UIImage(systemName: "eye")
-    var hiddenPasswordImage = UIImage(systemName: "eye.slash")
+    private let visiblePasswordImage = UIImage(systemName: "eye")
+    private let hiddenPasswordImage = UIImage(systemName: "eye.slash")
+    private var heightBelowBottom: CGFloat {
+        return 0 - (view_loginCard.frame.height + UIApplication.shared.windows[0].safeAreaInsets.bottom)
+    }
     
     
     // MARK: View Lifecycle
@@ -29,6 +33,16 @@ class LoginViewController: UIViewController {
         delegates()
         setupView()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveEaseInOut) {
+            self.constraint_bottomToSafeArea.constant = 0
+            self.view.layoutIfNeeded()
+        }
+    }
+    
     deinit { NotificationCenter.default.removeObserver(self) }
     
     
@@ -51,8 +65,7 @@ class LoginViewController: UIViewController {
     // MARK: - Setup View Methods
     
     private func delegates() {
-        //<#component#>.delegate = self
-        //<#component#>.dataSource = self
+        
     }
         
     private func setupView() {
@@ -60,6 +73,8 @@ class LoginViewController: UIViewController {
         view_loginCard.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
         addKeyboardObserver()
+        
+        constraint_bottomToSafeArea.constant = self.heightBelowBottom
     }
     
     
@@ -74,8 +89,18 @@ class LoginViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    func closeScreen() {
+        UIView.animate(withDuration: 0.4, delay: 0.0, options: .curveEaseOut) {
+            self.constraint_bottomToSafeArea.constant = self.heightBelowBottom
+            self.view.layoutIfNeeded()
+        } completion: { _ in
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
     
     // MARK: - Button Actions
+    
     @IBAction func tapShowHidePassword(_ sender: UIButton) {
         if sender.image(for: .normal) == visiblePasswordImage {
             sender.setImage(hiddenPasswordImage, for: .normal)
@@ -94,7 +119,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func tapNewUserButton(_ sender: UIButton) {
-        
+        closeScreen()
     }
     
     @IBAction func closeKeyboard(_ sender: UITapGestureRecognizer) {

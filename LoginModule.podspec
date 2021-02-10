@@ -38,9 +38,9 @@ Pod::Spec.new do |s|
   #   "ios": "12.0"
   # }
   
-  # s.resource_bundles = {
-  #   'LoginModule' => ['LoginModule/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'LoginModule' => ['LoginModule/Source/Assets/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

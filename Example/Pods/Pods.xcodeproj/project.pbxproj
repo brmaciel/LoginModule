@@ -22,6 +22,7 @@
 		B913078A25D4305600EC01DE /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913078225D4305500EC01DE /* LoginPresenter.swift */; };
 		B913078B25D4305600EC01DE /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913078325D4305500EC01DE /* LoginWorker.swift */; };
 		B913078C25D4305600EC01DE /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913078425D4305500EC01DE /* LoginRouter.swift */; };
+		B91307FE25D477E700EC01DE /* freedom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B91307FD25D477E600EC01DE /* freedom.jpg */; };
 		C29A8B8CDADA3D9A5AABA8E8B5A1D474 /* LoginModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3727F974A809BBE644C33BAD67FB0A /* LoginModule-dummy.m */; };
 		D9A62D3ABE1DB7C555977DEC91A5FA99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		B913078225D4305500EC01DE /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		B913078325D4305500EC01DE /* LoginWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
 		B913078425D4305500EC01DE /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		B91307FD25D477E600EC01DE /* freedom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = freedom.jpg; sourceTree = "<group>"; };
 		C171BA2E5E8A9064351B97490160A704 /* LoginModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LoginModule-Info.plist"; sourceTree = "<group>"; };
 		CB3D87C4F900D6DFB2992ACBD309EBB7 /* LoginModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30B3D3F3EC2C7194A6509E23E56D61B /* Pods-LoginModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoginModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				B913077C25D4305500EC01DE /* Login */,
+				B913080225D47C5400EC01DE /* Assets */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -211,6 +214,14 @@
 				B913078425D4305500EC01DE /* LoginRouter.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		B913080225D47C5400EC01DE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B91307FD25D477E600EC01DE /* freedom.jpg */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -385,6 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91307FE25D477E700EC01DE /* freedom.jpg in Resources */,
 				B913078625D4305600EC01DE /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
