@@ -32,7 +32,8 @@ Pod::Spec.new do |s|
   
   s.source_files = 'Source/**/*'
   #s.source_files = 'LoginModule/Classes/**/*'
-  # s.swift_version = '5.0'
+  
+  s.swift_versions = '5.0'
   # s.platforms = {
   #   "ios": "12.0"
   # }
