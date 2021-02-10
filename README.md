@@ -17,7 +17,7 @@ LoginModule is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'LoginModule'
+pod 'LoginModule', :git => 'https://github.com/brmaciel/LoginModule.git'
 ```
 
 ## Author
