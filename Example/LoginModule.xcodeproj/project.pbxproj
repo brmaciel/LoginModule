@@ -15,6 +15,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		73DB6F6B53D5684136CD6ED6 /* Pods_LoginModule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36025409B360D11E8B8133E6 /* Pods_LoginModule_Tests.framework */; };
+		B9B7767725D55C100074B06B /* UsernameValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B7767625D55C100074B06B /* UsernameValidationTests.swift */; };
+		B9B7767D25D55DBE0074B06B /* PasswordValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B7767C25D55DBE0074B06B /* PasswordValidationTests.swift */; };
+		B9B7768125D55EFF0074B06B /* LoginValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B7768025D55EFF0074B06B /* LoginValidationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		8C53A35B273D2AF315A4FA6E /* Pods-LoginModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-LoginModule_Example/Pods-LoginModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9159EFF0EF255AB2F4C4DADF /* Pods-LoginModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginModule_Example.release.xcconfig"; path = "Target Support Files/Pods-LoginModule_Example/Pods-LoginModule_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ADB90FC21C62C6D03B562C12 /* LoginModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LoginModule.podspec; path = ../LoginModule.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B9B7767625D55C100074B06B /* UsernameValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameValidationTests.swift; sourceTree = "<group>"; };
+		B9B7767C25D55DBE0074B06B /* PasswordValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidationTests.swift; sourceTree = "<group>"; };
+		B9B7768025D55EFF0074B06B /* LoginValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidationTests.swift; sourceTree = "<group>"; };
 		F8B1C95F3069200851D218A8 /* Pods-LoginModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginModule_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LoginModule_Tests/Pods-LoginModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +132,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				B9B7768625D56A2B0074B06B /* LoginInteractorTests */,
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -157,6 +164,16 @@
 				36025409B360D11E8B8133E6 /* Pods_LoginModule_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9B7768625D56A2B0074B06B /* LoginInteractorTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9B7767625D55C100074B06B /* UsernameValidationTests.swift */,
+				B9B7767C25D55DBE0074B06B /* PasswordValidationTests.swift */,
+				B9B7768025D55EFF0074B06B /* LoginValidationTests.swift */,
+			);
+			path = LoginInteractorTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +357,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9B7768125D55EFF0074B06B /* LoginValidationTests.swift in Sources */,
+				B9B7767D25D55DBE0074B06B /* PasswordValidationTests.swift in Sources */,
+				B9B7767725D55C100074B06B /* UsernameValidationTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

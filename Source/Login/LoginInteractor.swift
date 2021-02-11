@@ -68,7 +68,7 @@ class LoginInteractor {
     }
     
     
-    // MARK: Login Request Methods
+    // MARK: - Login Request Methods
     
     func requestLogin(_ loginForm: LoginForm) {
         presenter?.startRequest()
